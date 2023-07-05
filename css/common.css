@@ -1,0 +1,66 @@
+@font-face {
+  font-family: sans-serif;
+  src: url(../fonts/poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: sans-serif;
+  src: url(../fonts/poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: sans-serif;
+  src: url(../fonts/poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: sans-serif;
+  src: url(../fonts/inter/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: sans-serif;
+  src: url(../fonts/inter/Inter-Medium.ttf);
+}
+
+@font-face {
+  font-family: sans-serif;
+  src: url(../fonts/inter/Inter-Bold.ttf);
+}
+
+:root {
+  --primary-color: #1E1D1D;
+  --secondary-color: #8B8E99;
+  --header-height: 92px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1140px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
+}

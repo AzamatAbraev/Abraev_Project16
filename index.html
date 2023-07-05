@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Mohid Smartwatch</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container nav-container">
+          <div class="header-left">
+            <a href="">
+              <img src="images/logo.svg" alt="Logo" />
+              <p>Mohid</p>
+            </a>
+          </div>
+          <div class="header-middle">
+            <ul class="nsv-list">
+              <li>
+                <a href="#" class="nav-link">Home</a>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <button class="dropbtn" onclick="myFunction()">
+                    Brands
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content" id="myDropdown">
+                    <a href="#">Apple</a>
+                    <a href="#">Samsung</a>
+                    <a href="#">Rolex</a>
+                    <a href="#">Casio</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#" class="nav-link">Recent Products</a>
+              </li>
+              <li>
+                <a href="#" class="nav-link">Contact</a>
+              </li>
+              <li>
+                <a href="#" class="nav-link">About</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-right">
+            <button class="search-btn">
+              <img src="images/header-1.svg" alt="Search" />
+            </button>
+            <button class="account-btn">
+              <img src="images/header-2.svg" alt="Account" />
+            </button>
+            <button class="cart-btn">
+              <img src="images/header-3.svg" alt="Shop Cart" />
+              <img id="icon-img" src="images/header-4.svg" alt="number-icon" />
+            </button>
+          </div>
+        </div>
+        <div class="hamburger" id="navbar-open">
+          <button>
+            <img src="images/menu.svg" alt="Menu" />
+          </button>
+        </div>
+        <div id="navbar-responsive">
+          <ul class="res-nav-list">
+            <li class="res-nav-item">
+              <a href="#home" class="res-nav-link"> Home</a>
+            </li>
+            <li class="res-nav-item">
+              <a href="#" class="res-nav-link">Brands </a>
+            </li>
+            <li class="res-nav-item">
+              <a href="#" class="res-nav-link">Recent Products</a>
+            </li>
+            <li class="res-nav-item">
+              <a href="#" class="res-nav-link">Contact</a>
+            </li>
+            <li class="res-nav-item">
+              <a href="#" class="res-nav-link">About</a>
+            </li>
+          </ul>
+          <button id="navbar-close">
+            <img src="images/menu.svg" alt="Close" />
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="home-section" id="home">
+        <div class="container home-container">
+          <div class="home-left">
+            <h1>Discover Most Suitable Watches</h1>
+            <p>
+              Find the best, reliable, and cheap smart watches here. We focus on
+              product quality. Here you can find smart watches of almost all
+              brands. So why you are waiting? Just order now!
+            </p>
+            <div class="search-input">
+              <input
+                id="search"
+                type="text"
+                placeholder="Find the best brands"
+              />
+              <button>Search</button>
+              <img src="images/home-search.svg" alt="Search" />
+            </div>
+          </div>
+          <div class="home-right">
+            <img src="images/home-1.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="brand-section">
+        <div class="container brand-container">
+          <div class="watch-card">
+            <div class="card-left">
+              <img src="images/brand-1.png" alt="Apple Watch" />
+            </div>
+            <div class="card-right">
+              <h2>Apple</h2>
+              <p>
+                Apple is one of the most famous smart watches providing company.
+              </p>
+            </div>
+          </div>
+          <div class="watch-card">
+            <div class="card-left">
+              <img src="images/brand-2.png" alt="Xiaomi Watch" />
+            </div>
+            <div class="card-right">
+              <h2>Xiaomi</h2>
+              <p>Xiaomi smart watches are produced by MI company.</p>
+            </div>
+          </div>
+          <div class="watch-card">
+            <div class="card-left">
+              <img src="images/brand-3.png" alt="FitBit Watch" />
+            </div>
+            <div class="card-right">
+              <h2>FitBit</h2>
+              <p>
+                FitBit smart watches are best for there health and fitness
+                features.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="product-section">
+        <div class="container product-container">
+          <div class="product-title">
+            <p>Find your favourite smart watch.</p>
+            <h2>Our Latest Products</h2>
+          </div>
+          <div class="product-row">
+            <div class="product-card">
+              <div class="card-img">
+                <img src="images/product-1.png" alt="Watch" />
+              </div>
+              <div class="card-info">
+                <h4>Apple Smart I</h4>
+                <img src="images/stars.svg" alt="Stars" />
+                <h4><span>$300.00</span> $255.00</h4>
+              </div>
+              <div class="hover-element">
+                  <img id="cart-icon" src="images/cart-icon.svg" alt="Cart" />
+                  <img id="like-icon" src="images/like-icon.svg" alt="Like" />
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="card-img">
+                <img src="images/product-2.png" alt="Watch" />
+              </div>
+              <div class="card-info">
+                <h4>Apple Smart II</h4>
+                <img src="images/stars.svg" alt="Stars" />
+                <h4><span>$300.00</span> $255.00</h4>
+              </div>
+              <div class="hover-element">
+                  <img id="cart-icon" src="images/cart-icon.svg" alt="Cart" />
+                  <img id="like-icon" src="images/like-icon.svg" alt="Like" />
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="card-img">
+                <img src="images/product-3.png" alt="Watch" />
+              </div>
+              <div class="card-info">
+                <h4>Apple Smart III</h4>
+                <img src="images/stars.svg" alt="Stars" />
+                <h4><span>$300.00</span> $255.00</h4>
+              </div>
+              <div class="hover-element">
+                  <img id="cart-icon" src="images/cart-icon.svg" alt="Cart" />
+                  <img id="like-icon" src="images/like-icon.svg" alt="Like" />
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="card-img">
+                <img src="images/product-4.png" alt="Watch" />
+              </div>
+              <div class="card-info">
+                <h4>Apple Smart IV</h4>
+                <img src="images/stars.svg" alt="Stars" />
+                <h4><span>$300.00</span> $255.00</h4>
+              </div>
+              <div class="hover-element">
+                  <img id="cart-icon" src="images/cart-icon.svg" alt="Cart" />
+                  <img id="like-icon" src="images/like-icon.svg" alt="Like" />
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="card-img">
+                <img src="images/product-5.png" alt="Watch" />
+              </div>
+              <div class="card-info">
+                <h4>Samsung Watch Pro</h4>
+                <img src="images/stars.svg" alt="Stars" />
+                <h4><span>$300.00</span> $255.00</h4>
+              </div>
+              <div class="hover-element">
+                  <img id="cart-icon" src="images/cart-icon.svg" alt="Cart" />
+                  <img id="like-icon" src="images/like-icon.svg" alt="Like" />
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="card-img">
+                <img src="images/product-6.png" alt="Watch" />
+              </div>
+              <div class="card-info">
+                <h4>Fitbit Max 1</h4>
+                <img src="images/stars.svg" alt="Stars" />
+                <h4><span>$300.00</span> $255.00</h4>
+              </div>
+              <div class="hover-element">
+                  <img id="cart-icon" src="images/cart-icon.svg" alt="Cart" />
+                  <img id="like-icon" src="images/like-icon.svg" alt="Like" />
+              </div>
+            </div>
+          </div>
+          <div class="product-btn">
+            <button>View More</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="JS/main.js"></script>
+  </body>
+</html>

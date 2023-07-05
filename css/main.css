@@ -1,0 +1,283 @@
+.home-section {
+  font-family: "Poppins";
+  background-color: #242324;
+  margin-top: var(--header-height);
+  font-family: "Poppins";
+  padding-top: 102px;
+  padding-bottom: 142px;
+}
+
+.home-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-left {
+  display: flex;
+  flex-direction: column;
+  margin-top: 52px;
+}
+
+.home-left h1 {
+  color: #fff;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 125.5%;
+  max-width: 387px;
+}
+
+.home-left p {
+  color: var(--secondary-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125.5%;
+  padding: 47px 0px;
+  max-width: 367px;
+}
+
+#search {
+  border-radius: 15px;
+  background: #fff;
+  padding: 20px 86px 20px 56px;
+  border: none;
+  color: rgba(139, 142, 153, 0.7);
+  font-size: 16px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125.5%;
+}
+
+.search-input button {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 125.5%;
+  padding: 10px 15px;
+  background-color: #3858d6;
+  border-radius: 5px;
+  border: none;
+}
+
+.search-input {
+  position: relative;
+}
+
+.search-input input {
+  position: relative;
+}
+
+.search-input img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.search-input button {
+  position: absolute;
+  right: 59px;
+  top: 8px;
+}
+
+.home-right img {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .home-container {
+    flex-direction: column;
+  }
+
+  .home-left {
+    margin-bottom: 50px;
+  }
+
+  .home-left h1,
+  .home-left p {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .search-input {
+    margin: 0px 30px;
+  }
+
+  .search-input input {
+    width: 100%;
+  }
+
+  .search-input button {
+    right: 10px;
+  }
+}
+
+/* ------ Home Section End ------ */
+
+/* ------ Brand Section Start ----- */
+
+.brand-section {
+  font-family: "Inter";
+}
+
+.watch-card {
+  display: flex;
+  border-radius: 22px;
+  background: #f6f6f6;
+  padding: 46px 29px 44px 41px;
+  gap: 26px;
+}
+
+.watch-card img {
+  width: 100%;
+}
+
+.card-right h2 {
+  color: var(--primary-color);
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.card-right p {
+  color: var(--secondary-color);
+  font-size: 16px;
+  font-weight: 500;
+  padding-top: 9px;
+}
+
+.brand-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  padding-top: 73px;
+  padding-bottom: 102px;
+}
+
+@media (max-width: 950px) {
+  .brand-container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .brand-container {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+}
+
+/* ----- Brand Section End ----- */
+
+/* ----- Products Section Start ----- */
+
+.product-section {
+  font-family: "Inter";
+}
+
+.product-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 50px;
+  row-gap: 64px;
+}
+
+.product-card {
+  cursor: pointer;
+  position: relative;
+}
+
+#cart-icon, #like-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  opacity: 0;
+  transition: 1s;
+}
+
+#like-icon {
+  top: 56px;
+}
+
+.product-card:hover #like-icon,.product-card:hover #cart-icon {
+  opacity: 1;
+}
+
+.product-title p {
+  color: #3858d6;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.product-title h2 {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  padding-bottom: 65px;
+}
+
+.card-img {
+  padding: 28px 42px;
+  background-color: #f6f6f6;
+}
+
+.card-img img {
+  width: 100%;
+}
+
+.card-info h4 {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 24px;
+  font-family: "Poppins";
+  font-weight: 600;
+  margin-top: 11px;
+  margin-bottom: 8px;
+}
+
+.card-info img {
+  display: block;
+  margin: 0 auto;
+}
+
+.card-info span {
+  font-size: 20px;
+  color: #8b8e99;
+  text-decoration: line-through;
+  margin-top: 8px;
+}
+
+.product-btn button {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Poppins";
+  font-weight: 600;
+  background-color: #3858d6;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 30px;
+}
+
+.product-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+@media (max-width: 750px) {
+  .product-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .product-row {
+    grid-template-columns: 1fr;
+  }
+}
